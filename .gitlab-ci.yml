@@ -1,0 +1,35 @@
+image: docker:19.03.1
+
+stages:
+  - build
+  - publish
+
+build:
+  stage: build
+  image: node:16.18.0
+  cache:
+    key: "$CI_PROJECT_NAME-$CI_COMMIT_REF_NAME-node"
+    paths:
+      - node_modules
+  script:
+    - npm install
+    - npm run build
+  tags:
+    - docker
+  artifacts:
+    when: always
+    expire_in: 1 days
+    paths:
+      - dist/
+
+publish:
+  stage: publish
+  image: kalahari/ncftp:latest
+  only:
+    - main
+  dependencies:
+    - build
+  script:
+    - ncftpput -vR -u $FTP_USER -p $FTP_PASSWORD $FTP_HOST /kazunion dist/*
+  tags:
+    - docker

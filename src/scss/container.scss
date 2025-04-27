@@ -1,0 +1,36 @@
+@import "color";
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 20px;
+  @media screen and (max-width: 960px) {
+    padding: 0 10px;
+  }
+}
+
+//Точки для адаптива
+
+
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1400px) {
+
+}
+@media screen and (max-width: 1199px) {
+
+}
+@media screen and (max-width: 960px) {
+
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 425px) {
+
+}
