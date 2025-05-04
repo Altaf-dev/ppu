@@ -1,5 +1,7 @@
 const MENU_BTN = document.querySelector('.menu-btn')
 const MENU = document.querySelector('.header__nav')
+const CERT_GALLERY = document.querySelector('.mobile-cert')
+const CERT_LIST = document.querySelectorAll('.review-slide')
 
 //Раскрытие меню
 MENU_BTN.addEventListener('click', () => {
@@ -16,3 +18,39 @@ $(document).ready(function () {
     });
 });
 
+// Инициализация слайдеров
+function sliderInit() {
+    const galleryCert = new Swiper('.cert-slider', {
+        centeredSlides: true,
+        slideShow: 1,
+        loop: false,
+        speed: 500,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: '.button-prev',
+            prevEl: '.button-next',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true,
+            bulletClass: 'bullet',
+        },
+        // breakpoints: {
+        //     320: {
+        //         centeredSlides: true,
+        //         slidesPerView: 1,
+        //     },
+        //     767: {
+        //         centeredSlides: false,
+        //         slidesPerView: 2,
+        //     },
+        // }
+    });
+}
+
+sliderInit()
+
+Fancybox.bind("[data-fancybox]", {
+
+});
