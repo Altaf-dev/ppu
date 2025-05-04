@@ -1,5 +1,5 @@
 <% var data = {
-title: "ГлазоЛик",
+title: "Снаб Пром",
 description: "Какое то описание для страницы, для каждой страницы свое описание"
 }; %>
 
@@ -7,7 +7,37 @@ description: "Какое то описание для страницы, для �
 <%= _.template(require('./../includes/header.html').default)(data) %>
 
 <main>
-
+    <section class="main" id="main">
+        <div class="main__background">
+            <img src="img/mainBg.png" alt="background-img" class="background-img">
+        </div>
+        <div class="container">
+            <div class="main__desc">
+                <h1 class="title">Производство труб в ППУ изоляции</h1>
+                <p class="main__subtitle">И надёжная доставка по Казахстану сразу под монтаж</p>
+                <ul class="main__list">
+                    <li class="list-item">ГОСТ 30732-2006, <br> (9.601-2005, 9.602-200)</li>
+                    <li class="list-item">ГОСТ 30732-2020</li>
+                </ul>
+            </div>
+            <div class="main__form">
+                <p class="main__form-title">Получите расчёт стоимости и сроков в течение часа</p>
+                <form class="main__form-body" action="./php/send.php" id="main-form" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+                    <input type="text" name="phone" class="form-input phone-mask" placeholder="Телефон" required>
+                    <input type="text" name="name" class="form-input" placeholder="Имя" required>
+                    <button class="main-btn" type="submit">Получить расчёт</button>
+                    <label for="formUploadMain" class="form-upload">
+                        <span class="upload-wrap">
+                            <span class="upload-icon"></span>
+                            <span class="upload-name fileName" id="fileNameMain">Прикрепить файл</span>
+                            <input hidden id="formUploadMain" class="inputFile" type="file" name="myfile" size="40" accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx" aria-invalid="false">
+                        </span>
+                        <span class="upload-desc">Нажимая на кнопку, вы даёте согласие на обработку данных</span>
+                    </label>
+                </form>
+            </div>
+        </div>
+    </section>
 </main>
 
 

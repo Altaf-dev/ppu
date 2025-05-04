@@ -7,3 +7,12 @@ MENU_BTN.addEventListener('click', () => {
     MENU.classList.toggle('active')
 })
 
+
+//Прикрепить файл
+$(document).ready(function () {
+    $("#formUploadMain").change(function () {
+        let filename = $(this).val().replace(/.*\\/, "");
+        $("#fileNameMain").html(filename);
+    });
+});
+
