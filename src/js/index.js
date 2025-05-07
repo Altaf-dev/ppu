@@ -1,7 +1,6 @@
 const MENU_BTN = document.querySelector('.menu-btn')
 const MENU = document.querySelector('.header__nav')
-const CERT_GALLERY = document.querySelector('.mobile-cert')
-const CERT_LIST = document.querySelectorAll('.review-slide')
+const CERT_GALLERY = document.querySelector('.catalog__cert-btn')
 
 //Раскрытие меню
 MENU_BTN.addEventListener('click', () => {
@@ -51,6 +50,8 @@ function sliderInit() {
 
 sliderInit()
 
-Fancybox.bind("[data-fancybox]", {
-
-});
+// Инициализация галереи
+Fancybox.bind("[data-fancybox]", {});
+CERT_GALLERY.addEventListener('click', ()=> {
+    Fancybox.fromSelector('[data-fancybox="catalog-cert"]');
+})

@@ -102,3 +102,27 @@
     }
   }
 }
+
+.catalog-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 140%;
+  color: $white-text;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 1) inset;
+  background-color: $btn-secondary-hover;
+  transition: .3s;
+  &:focus {
+    background: linear-gradient(270.00deg, rgb(253, 198, 0) 18.467%,rgb(213, 103, 0) 111.847%);
+    color: $main-body;
+    box-shadow: none;
+  }
+  &:hover {
+    background: linear-gradient(270.00deg, rgb(253, 198, 0) 18.467%,rgb(213, 103, 0) 111.847%);
+    color: $main-body;
+    box-shadow: none;
+  }
+}
