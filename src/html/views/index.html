@@ -134,15 +134,165 @@ description: "Какое то описание для страницы, для �
             <div class="catalog__advantage">
                 <img src="img/catalog-advantage.png" alt="image" class="advantage-img">
                 <div class="advantage-list">
-                    <h4 class="advantage-title">В наличии все комплектующие и фасонные изделия</h4>
+                    <span class="advantage-title">В наличии все комплектующие и фасонные изделия</span>
                     <span class="advantage-item item1">Соединительные детали</span>
                     <span class="advantage-item item2">Системы ОДК</span>
                     <span class="advantage-item item3">Комплекты заделки стыков</span>
                     <button class="advantage-btn main-btn">Рассчитать стоимость</button>
                 </div>
             </div>
+            <div class="catalog__form">
+                <div class="catalog__block-left">
+                    <h2 class="title">Оставьте заявку &nbsp на расчёт</h2>
+                    <p class="subtitle">Рассчитаем стоимость в течение рабочего дня</p>
+                    <form action="./php/send.php" class="catalog__body"  method="post" accept-charset="utf-8" enctype="multipart/form-data">
+                        <div class="input-wrap">
+                            <label for="commentForm" class="input-label">Описание заказа или комментарий</label>
+                            <textarea name="comment" type="text" id="commentForm" class="form-comment"></textarea>
+                        </div>
+                        <label for="formUpload" class="form-upload">
+                            <span class="upload-icon"></span>
+                            <span class="upload-name fileName" id="fileName">Прикрепить файл</span>
+                            <input hidden id="formUpload" class="inputFile" type="file" name="myfile" size="40"
+                                   accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx" aria-invalid="false">
+                        </label>
+                        <div class="input-wrap">
+                            <label for="nameForm" class="input-label">Имя</label>
+                            <input name="name" type="text" id="nameForm" class="form-input" required placeholder="Иван">
+                        </div>
+                        <div class="input-wrap">
+                            <label for="phoneForm" class="input-label">Телефон</label>
+                            <input name="phone" type="text" id="phoneForm" class="form-input phone-mask" required placeholder="+7 (7212) 502 612">
+                        </div>
+                        <div class="input-wrap">
+                            <label for="emailForm" class="input-label">Почта</label>
+                            <input data-validation="required email" type="email" name="email" id="emailForm" class="form-input" required placeholder="example@mail.ru">
+                        </div>
+                        <button type="submit" class="catalog__submit main-btn">Отправить на расчёт</button>
+                    </form>
+                    <a href="mailto:toosnabprom@mail.ru" class="catalog__email">Можно на почту: <span class="fat">toosnabprom@mail.ru</span></a>
+                </div>
+                <div class="catalog__block-right">
+                    <span class="right-title">Получить КП <br> или договориться о личной встрече</span>
+                    <span class="subtitle">Оставьте заявку, перезвоним в течение двух минут</span>
+                    <button class="catalog__btn main-btn openModal" data-modal="modal__callback">Свяжитесь со мной</button>
+                    <a href="tel:+77758885529" class="catalog__block-phone">+7 775 888 55 29</a>
+                    <span class="catalog__block-text">Или позвоните. Мы на связи <br> с 9:00 до 18:00</span>
+                </div>
+            </div>
         </div>
     </section>
+
+
+    <section class="cases" id="cases">
+        <div class="container">
+            <h1 class="title">Поставляли трубы на<span class="accent">крупнейшие стройки Казахстана</span></h1>
+            <div class="cases__list">
+                <div class="cases__slider">
+                    <div class="slider-wrapper">
+                        <div class="swiper-wrapper">
+                            <div class="slide swiper-slide">
+                                <img src="img/caseKazTransOil.jpg" alt="img" class="slide-img">
+                                <div class="desc-wrapper">
+                                    <div class="slide-desc">
+                                        <span class="desc-subtitle">Заказчик:</span>
+                                        <span class="desc-title">АО “КазТрансОйл”</span>
+                                    </div>
+                                    <div class="slide-desc">
+                                        <span class="desc-subtitle">Объект:</span>
+                                        <span class="desc-title">Нефтегазовое месторождение Узень</span>
+                                    </div>
+                                    <div class="slide-desc">
+                                        <span class="desc-sum">726,6 млн ₸</span>
+                                        <span class="desc-subtitle">Сумма поставки</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide swiper-slide">
+                                <img src="img/caseKazzinc.jpg" alt="img" class="slide-img">
+                                <div class="desc-wrapper">
+                                    <div class="slide-desc">
+                                        <span class="desc-subtitle">Заказчик:</span>
+                                        <span class="desc-title">ТОО “KAZZINC”</span>
+                                    </div>
+                                    <div class="slide-desc">
+                                        <span class="desc-subtitle">Объект:</span>
+                                        <span class="desc-title">Риддерский ГОК</span>
+                                    </div>
+                                    <div class="slide-desc">
+                                        <span class="desc-sum">460,7 млн ₸</span>
+                                        <span class="desc-subtitle">Сумма поставки</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide swiper-slide">
+                                <img src="img/caseKarazhanBasMynai.jpg" alt="img" class="slide-img">
+                                <div class="desc-wrapper">
+                                    <div class="slide-desc">
+                                        <span class="desc-subtitle">Заказчик:</span>
+                                        <span class="desc-title">АО “КаражанбасМунай”</span>
+                                    </div>
+                                    <div class="slide-desc">
+                                        <span class="desc-subtitle">Объект:</span>
+                                        <span class="desc-title">Нефтяное месторождение Каражанбас</span>
+                                    </div>
+                                    <div class="slide-desc">
+                                        <span class="desc-sum">269,6 млн ₸</span>
+                                        <span class="desc-subtitle">Сумма поставки</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide swiper-slide">
+                                <img src="img/caseKatko.jpg" alt="img" class="slide-img">
+                                <div class="desc-wrapper">
+                                    <div class="slide-desc">
+                                        <span class="desc-subtitle">Заказчик:</span>
+                                        <span class="desc-title">ТОО СП "Катко"</span>
+                                    </div>
+                                    <div class="slide-desc">
+                                        <span class="desc-subtitle">Объект:</span>
+                                        <span class="desc-title">-</span>
+                                    </div>
+                                    <div class="slide-desc">
+                                        <span class="desc-sum">164,4 млн ₸</span>
+                                        <span class="desc-subtitle">Сумма поставки</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide swiper-slide">
+                                <img src="img/caseKazMunayGaz.jpg" alt="img" class="slide-img">
+                                <div class="desc-wrapper">
+                                    <div class="slide-desc">
+                                        <span class="desc-subtitle">Заказчик:</span>
+                                        <span class="desc-title">АО НК “КазМунайГаз”</span>
+                                    </div>
+                                    <div class="slide-desc">
+                                        <span class="desc-subtitle">Объект:</span>
+                                        <span class="desc-title">Строительство резервной линии КМГ</span>
+                                    </div>
+                                    <div class="slide-desc">
+                                        <span class="desc-sum">95,2 млн ₸</span>
+                                        <span class="desc-subtitle">Сумма поставки</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cases__button-prev button-slide">
+                            <svg class="arrow arrow-prev" width="100%" height="100%" viewBox="0 0 20 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 32L2 16.5L19 1" stroke="#182033" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="cases__button-next button-slide">
+                            <svg class="arrow arrow-next" width="100%" height="100%" viewBox="0 0 20 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L18 16.5L1 32" stroke="#182033" stroke-width="2"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </main>
 
 

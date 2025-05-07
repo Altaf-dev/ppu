@@ -46,7 +46,35 @@ function sliderInit() {
         //     },
         // }
     });
+
+    const cases = new Swiper('.slider-wrapper', {
+        speed: 400,
+        spaceBetween: 20,
+        loop: false,
+        slidesPerView: "auto",
+        autoplay: false,
+        navigation: {
+            nextEl: '.cases__button-next',
+            prevEl: '.cases__button-prev',
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: "auto",
+            },
+            425: {
+                slidesPerView: 2,
+            },
+            767: {
+                slidesPerView: 2,
+            },
+            1199: {
+                slidesPerView: "auto",
+            },
+        },
+    });
+
 }
+
 
 sliderInit()
 
