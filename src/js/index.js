@@ -30,22 +30,64 @@ function sliderInit() {
             prevEl: '.button-next',
         },
         pagination: {
-            el: '.swiper-pagination',
+            el: '.cert-pagination',
             type: 'bullets',
             clickable: true,
             bulletClass: 'bullet',
         },
-        // breakpoints: {
-        //     320: {
-        //         centeredSlides: true,
-        //         slidesPerView: 1,
-        //     },
-        //     767: {
-        //         centeredSlides: false,
-        //         slidesPerView: 2,
-        //     },
-        // }
     });
+
+    const galleryAbout = new Swiper('.about-slider', {
+        centeredSlides: true,
+        // slideShow: 1,
+        loop: false,
+        speed: 500,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: '.button-prev',
+            prevEl: '.button-next',
+        },
+        pagination: {
+            el: '.about-pagination',
+            type: 'bullets',
+            clickable: true,
+            bulletClass: 'bullet',
+        },
+        scrollbar: {
+            el: ".about-scrollbar",
+            hide: false,
+            draggable: true,
+            enabled: true
+        },
+    });
+
+    const galleryAboutCert = new Swiper('.about__cert-slider', {
+        centeredSlides: true,
+        // slideShow: 1,
+        loop: true,
+        speed: 500,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: '.button-prev',
+            prevEl: '.button-next',
+        },
+        pagination: {
+            el: '.about-cert-pagination',
+            type: 'bullets',
+            clickable: true,
+            bulletClass: 'bullet',
+        },
+    });
+
+    const galleryAboutDesc = new Swiper('.about-slider-desc', {
+        centeredSlides: true,
+        speed: 500,
+        effect: "fade",
+    });
+
+    galleryAbout.controller.control = galleryAboutDesc;
+    galleryAboutDesc.controller.control = galleryAbout;
+
 
     const cases = new Swiper('.slider-wrapper', {
         speed: 400,
@@ -72,6 +114,7 @@ function sliderInit() {
             },
         },
     });
+
 
 }
 
