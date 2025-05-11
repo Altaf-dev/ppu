@@ -1,6 +1,7 @@
 const MENU_BTN = document.querySelector('.menu-btn')
 const MENU = document.querySelector('.header__nav')
 const CERT_GALLERY = document.querySelector('.catalog__cert-btn')
+const ABOUT_CERT = document.querySelector('.cert-link')
 
 //Раскрытие меню
 MENU_BTN.addEventListener('click', () => {
@@ -39,7 +40,6 @@ function sliderInit() {
 
     const galleryAbout = new Swiper('.about-slider', {
         centeredSlides: true,
-        // slideShow: 1,
         loop: false,
         speed: 500,
         spaceBetween: 20,
@@ -61,10 +61,19 @@ function sliderInit() {
         },
     });
 
-    const galleryAboutCert = new Swiper('.about__cert-slider', {
+    const galleryAboutDesc = new Swiper('.about-slider-desc', {
         centeredSlides: true,
-        // slideShow: 1,
-        loop: true,
+        speed: 500,
+        effect: "fade",
+    });
+
+    galleryAbout.controller.control = galleryAboutDesc;
+    galleryAboutDesc.controller.control = galleryAbout;
+
+    const galleryAboutCert = new Swiper('.about__cert-slider', {
+        centeredSlides: false,
+        slidesPerView: 2,
+        loop: false,
         speed: 500,
         spaceBetween: 20,
         navigation: {
@@ -77,17 +86,15 @@ function sliderInit() {
             clickable: true,
             bulletClass: 'bullet',
         },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            1199: {
+                slidesPerView: 2,
+            },
+        },
     });
-
-    const galleryAboutDesc = new Swiper('.about-slider-desc', {
-        centeredSlides: true,
-        speed: 500,
-        effect: "fade",
-    });
-
-    galleryAbout.controller.control = galleryAboutDesc;
-    galleryAboutDesc.controller.control = galleryAbout;
-
 
     const cases = new Swiper('.slider-wrapper', {
         speed: 400,
@@ -114,15 +121,20 @@ function sliderInit() {
             },
         },
     });
-
-
 }
 
 
 sliderInit()
 
-// Инициализация галереи
+// Инициализация галереи Fancybox
 Fancybox.bind("[data-fancybox]", {});
 CERT_GALLERY.addEventListener('click', ()=> {
     Fancybox.fromSelector('[data-fancybox="catalog-cert"]');
 })
+
+Fancybox.bind("[data-fancybox]", {});
+ABOUT_CERT.addEventListener('click', ()=> {
+    Fancybox.fromSelector('[data-fancybox="about-cert"]');
+})
+
+

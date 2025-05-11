@@ -32,7 +32,6 @@ description: "Какое то описание для страницы, для �
                             <span class="upload-name fileName" id="fileNameMain">Прикрепить файл</span>
                             <input hidden id="formUploadMain" class="inputFile" type="file" name="myfile" size="40" accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx" aria-invalid="false">
                         </span>
-                        <span class="upload-desc">Нажимая на кнопку, вы даёте согласие на обработку данных</span>
                     </label>
                 </form>
             </div>
@@ -269,13 +268,21 @@ description: "Какое то описание для страницы, для �
                 </div>
             </div>
             <div class="about__cert">
-                <div class="about__cert-slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="img/about-cert1.png" alt="image" class="about-cert">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/about-cert2.png" alt="image" class="about-cert">
+                <div class="about__cert-wrapper">
+                    <div class="about__cert-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/about-cert1.png" alt="image" class="about-cert" data-fancybox="about-cert">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/about-cert2.png" alt="image" class="about-cert" data-fancybox="about-cert">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/about-cert1.png" alt="image" class="about-cert" data-fancybox="about-cert">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/about-cert2.png" alt="image" class="about-cert" data-fancybox="about-cert">
+                            </div>
                         </div>
                     </div>
                     <div class="cert-btn">
@@ -286,120 +293,122 @@ description: "Какое то описание для страницы, для �
                         <div class="bullet"></div>
                     </div>
                 </div>
-
+                <div class="block-text">
+                    <span class="text-title">Даём гарантию. Если трубы придут на объект с дефектами – заменим за свой счёт</span>
+                    <span class="text-desc">Собственная лаборатория контролирует характеристики всех материалов</span>
+                    <div class="btn-block">
+                        <span class="text-item">CT-KZ</span>
+                        <button class="cert-link">Сертификаты</button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
 
-<!--    <section class="cases" id="cases">-->
-<!--        <div class="container">-->
-<!--            <h1 class="title">Поставляли трубы на <span class="accent">крупнейшие стройки Казахстана</span></h1>-->
-<!--            <div class="cases__list">-->
-<!--                <div class="cases__slider">-->
-<!--                    <div class="slider-wrapper">-->
-<!--                        <div class="swiper-wrapper">-->
-<!--                            <div class="slide swiper-slide">-->
-<!--                                <img src="img/case1.png" alt="img" class="slide-img">-->
-<!--                                <div class="desc-wrapper">-->
-<!--                                    <div class="slide-desc">-->
-<!--                                        <span class="desc-subtitle">Заказчик:</span>-->
-<!--                                        <span class="desc-title">АО “КазТрансОйл”</span>-->
-<!--                                    </div>-->
-<!--                                    <div class="slide-desc">-->
-<!--                                        <span class="desc-subtitle">Объект:</span>-->
-<!--                                        <span class="desc-title">Нефтегазовое месторождение Узень</span>-->
-<!--                                    </div>-->
-<!--                                    <div class="slide-desc">-->
-<!--                                        <span class="desc-sum">726,6 млн ₸</span>-->
-<!--                                        <span class="desc-subtitle">Сумма поставки</span>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="slide swiper-slide">-->
-<!--                                <img src="img/case2.png" alt="img" class="slide-img">-->
-<!--                                <div class="desc-wrapper">-->
-<!--                                    <div class="slide-desc">-->
-<!--                                        <span class="desc-subtitle">Заказчик:</span>-->
-<!--                                        <span class="desc-title">ТОО “KAZZINC”</span>-->
-<!--                                    </div>-->
-<!--                                    <div class="slide-desc">-->
-<!--                                        <span class="desc-subtitle">Объект:</span>-->
-<!--                                        <span class="desc-title">Риддерский ГОК</span>-->
-<!--                                    </div>-->
-<!--                                    <div class="slide-desc">-->
-<!--                                        <span class="desc-sum">460,7 млн ₸</span>-->
-<!--                                        <span class="desc-subtitle">Сумма поставки</span>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="slide swiper-slide">-->
-<!--                                <img src="img/case3.png" alt="img" class="slide-img">-->
-<!--                                <div class="desc-wrapper">-->
-<!--                                    <div class="slide-desc">-->
-<!--                                        <span class="desc-subtitle">Заказчик:</span>-->
-<!--                                        <span class="desc-title">АО “КаражанбасМунай”</span>-->
-<!--                                    </div>-->
-<!--                                    <div class="slide-desc">-->
-<!--                                        <span class="desc-subtitle">Объект:</span>-->
-<!--                                        <span class="desc-title">Нефтяное месторождение Каражанбас</span>-->
-<!--                                    </div>-->
-<!--                                    <div class="slide-desc">-->
-<!--                                        <span class="desc-sum">269,6 млн ₸</span>-->
-<!--                                        <span class="desc-subtitle">Сумма поставки</span>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="slide swiper-slide">-->
-<!--                                <img src="img/case1.png" alt="img" class="slide-img">-->
-<!--                                <div class="desc-wrapper">-->
-<!--                                    <div class="slide-desc">-->
-<!--                                        <span class="desc-subtitle">Заказчик:</span>-->
-<!--                                        <span class="desc-title">ТОО СП "Катко"</span>-->
-<!--                                    </div>-->
-<!--                                    <div class="slide-desc">-->
-<!--                                        <span class="desc-subtitle">Объект:</span>-->
-<!--                                        <span class="desc-title">-</span>-->
-<!--                                    </div>-->
-<!--                                    <div class="slide-desc">-->
-<!--                                        <span class="desc-sum">164,4 млн ₸</span>-->
-<!--                                        <span class="desc-subtitle">Сумма поставки</span>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="slide swiper-slide">-->
-<!--                                <img src="img/case2.png" alt="img" class="slide-img">-->
-<!--                                <div class="desc-wrapper">-->
-<!--                                    <div class="slide-desc">-->
-<!--                                        <span class="desc-subtitle">Заказчик:</span>-->
-<!--                                        <span class="desc-title">АО НК “КазМунайГаз”</span>-->
-<!--                                    </div>-->
-<!--                                    <div class="slide-desc">-->
-<!--                                        <span class="desc-subtitle">Объект:</span>-->
-<!--                                        <span class="desc-title">Строительство резервной линии КМГ</span>-->
-<!--                                    </div>-->
-<!--                                    <div class="slide-desc">-->
-<!--                                        <span class="desc-sum">95,2 млн ₸</span>-->
-<!--                                        <span class="desc-subtitle">Сумма поставки</span>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="cases__button-prev button-slide">-->
-<!--                            <svg class="arrow arrow-prev" width="100%" height="100%" viewBox="0 0 20 33" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                <path d="M19 32L2 16.5L19 1" stroke="#182033" stroke-width="2"/>-->
-<!--                            </svg>-->
-<!--                        </div>-->
-<!--                        <div class="cases__button-next button-slide">-->
-<!--                            <svg class="arrow arrow-next" width="100%" height="100%" viewBox="0 0 20 33" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                <path d="M1 1L18 16.5L1 32" stroke="#182033" stroke-width="2"/>-->
-<!--                            </svg>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
+    <section class="cases" id="cases">
+        <div class="container">
+            <h2 class="title">Организуем надежную поставку на объект, точно по графику</h2>
+            <div class="cases__map">
+                <div class="map-list">
+                    <span class="list-item item-1">Большие объёмы доставляем с завода ж/д транспортом</span>
+                    <span class="list-item item-2">Свой транспорт и отлаженная логистика</span>
+                </div>
+                <img src="img/map.png" alt="map" class="map-img">
+                <div class="map-desc">
+                    <div class="map-title">20<span class="title-text"> тыс</span></div>
+                    <div class="map-subtitle">метров труб производим в месяц</div>
+                </div>
+            </div>
+            <div class="cases__list">
+                <h2 class="title">Поставляли трубы на <span class="accent">крупнейшие стройки Казахстана</span></h2>
+                <div class="cases__slider">
+                    <div class="slider-wrapper">
+                        <div class="swiper-wrapper">
+                            <div class="slide swiper-slide">
+                                <img src="img/case1.png" alt="img" class="slide-img">
+                                <div class="desc-wrapper">
+                                    <div class="slide-desc">
+                                        <span class="desc-subtitle">Заказчик:</span>
+                                        <span class="desc-title">ТОО Тамыр-Ақтөбе</span>
+                                    </div>
+                                    <div class="slide-desc">
+                                        <span class="desc-subtitle">Объект:</span>
+                                        <span class="desc-title">Магистральный газопровод «Жанаозен – Актау»</span>
+                                    </div>
+                                    <div class="slide-desc">
+                                        <span class="desc-sum">4,427 млрд ₸</span>
+                                        <span class="desc-subtitle">Сумма поставки</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide swiper-slide">
+                                <img src="img/case2.png" alt="img" class="slide-img">
+                                <div class="desc-wrapper">
+                                    <div class="slide-desc">
+                                        <span class="desc-subtitle">Заказчик:</span>
+                                        <span class="desc-title">ТОО Тамыр-Ақтөбе</span>
+                                    </div>
+                                    <div class="slide-desc">
+                                        <span class="desc-subtitle">Объект:</span>
+                                        <span class="desc-title">Нефтепровод на месторождении Кумколь</span>
+                                    </div>
+                                    <div class="slide-desc">
+                                        <span class="desc-sum">2,192 млрд ₸</span>
+                                        <span class="desc-subtitle">Сумма поставки</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide swiper-slide">
+                                <img src="img/case3.png" alt="img" class="slide-img">
+                                <div class="desc-wrapper">
+                                    <div class="slide-desc">
+                                        <span class="desc-subtitle">Заказчик:</span>
+                                        <span class="desc-title">ТОО Тамыр-Ақтөбе</span>
+                                    </div>
+                                    <div class="slide-desc">
+                                        <span class="desc-subtitle">Объект:</span>
+                                        <span class="desc-title">Строительство золоотвала для Карагандинской ТЭЦ-3</span>
+                                    </div>
+                                    <div class="slide-desc">
+                                        <span class="desc-sum">2,192 млрд ₸</span>
+                                        <span class="desc-subtitle">Сумма поставки</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide swiper-slide">
+                                <img src="img/case1.png" alt="img" class="slide-img">
+                                <div class="desc-wrapper">
+                                    <div class="slide-desc">
+                                        <span class="desc-subtitle">Заказчик:</span>
+                                        <span class="desc-title">ТОО Тамыр-Ақтөбе</span>
+                                    </div>
+                                    <div class="slide-desc">
+                                        <span class="desc-subtitle">Объект:</span>
+                                        <span class="desc-title">Магистральный газопровод «Жанаозен – Актау»</span>
+                                    </div>
+                                    <div class="slide-desc">
+                                        <span class="desc-sum">4,427 млрд ₸</span>
+                                        <span class="desc-subtitle">Сумма поставки</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cases__button-prev button-slide">
+                            <svg class="arrow arrow-prev" width="100%" height="100%" viewBox="0 0 20 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 32L2 16.5L19 1" stroke="#FFFFFF" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="cases__button-next button-slide">
+                            <svg class="arrow arrow-next" width="100%" height="100%" viewBox="0 0 20 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L18 16.5L1 32" stroke="#FFFFFF" stroke-width="2"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </main>
 
