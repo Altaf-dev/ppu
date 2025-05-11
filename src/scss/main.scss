@@ -1492,6 +1492,8 @@
     border-radius: 20px;
     background-color: #242B3DFF;
     @media screen and (max-width: 1199px) {
+      display: flex;
+      align-items: center;
       width: 58.5%;
       padding: 28px 95px;
     }
@@ -1545,6 +1547,9 @@
     display: flex;
     align-items: center;
     margin-top: auto;
+    @media screen and (max-width: 767px) {
+      margin-top: 70px;
+    }
   }
   .text-item {
     display: flex;
@@ -1564,6 +1569,7 @@
   }
 
   .cert-link {
+    display: none;
     position: relative;
     margin-left: 16px;
     font-size: 1.6rem;
@@ -1585,6 +1591,9 @@
       &:after {
         border: 1px dashed $accent-text;
       }
+    }
+    @media screen and (max-width: 767px) {
+      display: block;
     }
   }
 }
