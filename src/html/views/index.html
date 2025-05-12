@@ -304,10 +304,10 @@ description: "Какое то описание для страницы, для �
             </div>
         </div>
     </section>
-    <section class="cases" id="cases">
+    <section class="provider" id="provider">
         <div class="container">
             <h2 class="title">Организуем надежную поставку на объект, точно по графику</h2>
-            <div class="cases__map">
+            <div class="provider__map">
                 <div class="map-list">
                     <span class="list-item item-1">Большие объёмы доставляем с завода ж/д транспортом</span>
                     <span class="list-item item-2">Свой транспорт и отлаженная логистика</span>
@@ -318,6 +318,23 @@ description: "Какое то описание для страницы, для �
                     <div class="map-subtitle">метров труб производим в месяц</div>
                 </div>
             </div>
+            <div class="provider__form">
+                <img src="img/form-decor.png" alt="decor" class="form-decor">
+                <div class="form-wrapper">
+                    <h3 class="title">Получите консультацию или договоритесь об экскурсии на завод</h3>
+                    <form class="provider__form-body" action="./php/send.php" id="cases-form" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+                        <input type="text" name="post" class="form-input" placeholder="Почта" required>
+                        <input type="text" name="phone" class="form-input phone-mask" placeholder="Телефон" required>
+                        <button class="main-btn submit-btn" type="submit">Получить расчёт</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cases" id="cases">
+        <div class="container">
+
             <div class="cases__list">
                 <h2 class="title">Поставляли трубы на <span class="accent">крупнейшие стройки Казахстана</span></h2>
                 <div class="cases__slider">

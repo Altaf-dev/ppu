@@ -1598,7 +1598,7 @@
   }
 }
 
-.cases {
+.provider {
   padding-top: 80px;
   padding-bottom: 80px;
   @media screen and (max-width: 1199px) {
@@ -1746,6 +1746,145 @@
     @media screen and (max-width: 767px) {
       font-size: 1.4rem;
       color: $main-body;
+    }
+  }
+
+  &__form {
+    position: relative;
+    padding: 40px 40px 50px;
+    background: rgba(255, 255, 255, .1);
+    border-radius: 20px;
+    @media screen and (max-width: 1199px) {
+      max-width: 860px;
+      padding: 30px 30px 40px;
+      margin: 0 auto;
+    }
+
+    @media screen and (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      max-width: 425px;
+      padding: 30px 30px 54px;
+      border-radius: 10px;
+    }
+  }
+
+  .form-decor {
+    position: absolute;
+    left: 56px;
+    bottom: 0;
+    width: 386px;
+    height: 353px;
+    object-fit: cover;
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
+  }
+
+  .form-wrapper {
+    max-width: 667px;
+    margin-left: auto;
+    @media screen and (max-width: 1199px) {
+      margin-right: auto;
+      margin-left: 0;
+    }
+
+    @media screen and (max-width: 767px) {
+      margin-right: 0;
+    }
+  }
+
+  .title {
+    margin-bottom: 63px;
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 21px;
+    }
+
+    @media screen and (max-width: 767px) {
+      max-width: 285px;
+      margin-bottom: 34px;
+    }
+    @media screen and (max-width: 425px) {
+      max-width: 230px;
+    }
+  }
+
+  &__form-body {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+  }
+
+  .form-input {
+    max-width: 216px;
+    padding: 25px 15px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 150%;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.15);
+    color: $white-text;
+    &:first-child {
+      margin-right: 10px;
+      @media screen and (max-width: 767px) {
+        margin-right: 0;
+        margin-bottom: 6px;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      max-width: 100%;
+      width: 100%;
+      margin-right: 0;
+      background: rgba(255, 255, 255, 1);
+      color: $main-body;
+      &::placeholder {
+        color: $main-body;
+      }
+    }
+  }
+
+  .submit-btn {
+    padding: 25px 35px;
+    margin-left: 20px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 150%;
+    @media screen and (max-width: 767px) {
+      max-width: 263px;
+      width: 100%;
+      padding: 20px 0;
+      margin-top: 24px;
+      margin-left: 0;
+    }
+  }
+}
+
+.cases {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  @media screen and (max-width: 1199px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  @media screen and (max-width: 767px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .title {
+    max-width: 865px;
+    margin-bottom: 42px;
+    @media screen and (max-width: 1199px) {
+      max-width: 777px;
+      margin-bottom: 36px;
+    }
+
+    @media screen and (max-width: 767px) {
+      max-width: 490px;
+      margin-bottom: 22px;
     }
   }
 
