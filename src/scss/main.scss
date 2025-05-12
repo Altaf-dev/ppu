@@ -897,6 +897,7 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 5px;
     background: rgba(255, 255, 255, 0.07);
+    color: $white-text;
   }
 
   .form-upload {
@@ -959,7 +960,7 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 5px;
     background: rgba(255, 255, 255, 0.07);
-
+    color: $white-text;
     &::placeholder {
       font-size: 1.8rem;
       font-weight: 400;
@@ -1827,6 +1828,13 @@
     border-radius: 4px;
     background: rgba(255, 255, 255, 0.15);
     color: $white-text;
+    &::placeholder {
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 140%;
+      color: $white-text;
+      opacity: .7;
+    }
     &:first-child {
       margin-right: 10px;
       @media screen and (max-width: 767px) {
@@ -1872,6 +1880,17 @@
   @media screen and (max-width: 767px) {
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+
+  &__list {
+    margin-bottom: 140px;
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 100px;
+    }
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 80px;
+    }
   }
 
   .title {
@@ -2064,5 +2083,268 @@
 
   .arrow-next {
     right: 35%;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    @media screen and (max-width: 1199px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media screen and (max-width: 767px) {
+
+    }
+  }
+
+  .table-title {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    height: 430px;
+    padding: 22px 38px;
+    border-radius: 20px;
+    background: rgba(48, 55, 73, .4);
+    @media screen and (max-width: 1199px) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: 270px;
+      padding: 45px 70px;
+      margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 767px) {
+      max-width: 425px;
+      height: 115px;
+      padding: 20px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+    }
+  }
+
+  .text {
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 126%;
+    letter-spacing: -2%;
+    @media screen and (max-width: 1199px) {
+      max-width: 210px;
+    }
+    @media screen and (max-width: 960px) {
+      max-width: 150px;
+      font-size: 2.8rem;
+    }
+
+    @media screen and (max-width: 767px) {
+      max-width: 80px;
+      font-size: 1.5rem;
+    }
+  }
+
+  .num {
+    margin-top: 57px;
+    margin-bottom: 20px;
+    width: 239px;
+    height: 178px;
+    object-fit: contain;
+    @media screen and (max-width: 1199px) {
+      margin: 0;
+    }
+    @media screen and (max-width: 960px) {
+      width: 200px;
+      height: 150px;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 100px;
+      height: 75px;
+    }
+  }
+
+  .body-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    //max-width: 760px;
+    width: 65%;
+    @media screen and (max-width: 1199px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 767px) {
+      max-width: 425px;
+    }
+  }
+
+  .table-body {
+    position: relative;
+    width: 100%;
+    height: 430px;
+    padding: 20px 20px 0;
+    border-radius: 20px;
+    background: $white-text;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 140%;
+    color: $main-body;
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 70px;
+      border-radius: 20px;
+      background: linear-gradient(0deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+      @media screen and (max-width: 767px) {
+        height: 30px;
+        border-radius: 10px;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      height: 210px;
+      padding: 5px 10px 0;
+      margin: 0 auto;
+      border-radius: 10px;
+    }
+  }
+
+  .headline {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-right: 35px;
+    @media screen and (max-width: 1199px) {
+      padding-right: 25px;
+    }
+    @media screen and (max-width: 767px) {
+      margin-bottom: 10px;
+      padding-right: 10px;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #0E1932;
+      opacity: .1;
+      @media screen and (max-width: 767px) {
+
+      }
+    }
+    tbody {
+      width: 100%;
+    }
+    .row {
+      margin-bottom: 0;
+    }
+  }
+
+  .table-scroll {
+    height: 350px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    overflow-x:auto;
+    @media screen and (max-width: 1199px) {
+      padding-right: 20px;
+    }
+    @media screen and (max-width: 767px) {
+      height: 175px;
+      padding-top: 10px;
+      padding-right: 5px;
+      padding-bottom: 0;
+    }
+    @media screen and (max-width: 425px) {
+
+    }
+    table {
+      width: 100%;
+    }
+  }
+
+  .cases__scroll::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .cases__scroll::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #D8D8D8;
+  }
+
+  .cases__scroll::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background: rgba(216, 216, 216, .2);
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 140%;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 13px;
+      font-size: 0.8rem;
+    }
+  }
+
+  .city {
+    text-align: start;
+    font-size: 1.6rem;
+    flex-basis: 30%;
+    @media screen and (max-width: 767px) {
+      flex-basis: 30%;
+      font-size: 0.8rem;
+    }
+  }
+
+  .sum {
+    text-align: end;
+  }
+
+  .table-text {
+    position: relative;
+    margin-top: 20px;
+    padding-left: 30px;
+    color: #F5F5F5;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 140%;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: 0;
+      background-image: url("../img/star.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 18px;
+      height: 18px;
+    }
+    @media screen and (max-width: 767px) {
+      max-width: 220px;
+      padding-left: 15px;
+      margin-top: 10px;
+      font-size: 1.3rem;
+      font-weight: 500;
+      line-height: 155%;
+      &:before {
+        top: 4px;
+        width: 9px;
+        height: 9px;
+      }
+    }
   }
 }
