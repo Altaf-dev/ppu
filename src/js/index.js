@@ -38,8 +38,8 @@ function sliderInit() {
         speed: 500,
         spaceBetween: 20,
         navigation: {
-            nextEl: '.button-prev',
-            prevEl: '.button-next',
+            nextEl: '.catalog-btn-prev',
+            prevEl: '.catalog-btn-next',
         },
         pagination: {
             el: '.cert-pagination',
@@ -55,8 +55,8 @@ function sliderInit() {
         speed: 500,
         spaceBetween: 20,
         navigation: {
-            nextEl: '.button-prev',
-            prevEl: '.button-next',
+            nextEl: '.about-btn-prev',
+            prevEl: '.about-btn-next',
         },
         pagination: {
             el: '.about-pagination',
@@ -88,8 +88,8 @@ function sliderInit() {
         speed: 500,
         spaceBetween: 20,
         navigation: {
-            nextEl: '.button-prev',
-            prevEl: '.button-next',
+            nextEl: '.cert-btn-prev',
+            prevEl: '.cert-btn-next',
         },
         pagination: {
             el: '.about-cert-pagination',
