@@ -140,43 +140,43 @@ description: "Какое то описание для страницы, для �
                     <button class="advantage-btn main-btn">Рассчитать стоимость</button>
                 </div>
             </div>
-            <div class="catalog__form">
-                <div class="catalog__block-left">
+            <div class="main-form">
+                <div class="main-block-left">
                     <h2 class="title">Оставьте заявку на расчёт</h2>
                     <p class="subtitle">Рассчитаем стоимость в течение рабочего дня</p>
-                    <form action="./php/send.php" class="catalog__body"  method="post" accept-charset="utf-8" enctype="multipart/form-data">
+                    <form action="./php/send.php" class="main-body"  method="post" accept-charset="utf-8" enctype="multipart/form-data">
                         <div class="input-wrap">
-                            <label for="commentForm" class="input-label">Описание заказа или комментарий</label>
-                            <textarea name="comment" type="text" id="commentForm" class="form-comment"></textarea>
+                            <label for="commentFormOne" class="input-label">Описание заказа или комментарий</label>
+                            <textarea name="comment" type="text" id="commentFormOne" class="form-comment"></textarea>
                         </div>
-                        <label for="formUpload" class="form-upload">
+                        <label for="formUploadOne" class="form-upload">
                             <span class="upload-icon"></span>
-                            <span class="upload-name fileName" id="fileName">Прикрепить файл</span>
-                            <input hidden id="formUpload" class="inputFile" type="file" name="myfile" size="40"
+                            <span class="upload-name fileName" id="fileNameOne">Прикрепить файл</span>
+                            <input hidden id="formUploadOne" class="inputFile" type="file" name="myfile" size="40"
                                    accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx" aria-invalid="false">
                         </label>
                         <div class="input-wrap">
-                            <label for="nameForm" class="input-label">Имя</label>
-                            <input name="name" type="text" id="nameForm" class="form-input" required placeholder="Иван">
+                            <label for="nameFormOne" class="input-label">Имя</label>
+                            <input name="name" type="text" id="nameFormOne" class="form-input" required placeholder="Иван">
                         </div>
                         <div class="input-wrap">
-                            <label for="phoneForm" class="input-label">Телефон</label>
-                            <input name="phone" type="text" id="phoneForm" class="form-input phone-mask" required placeholder="+7 (7212) 502 612">
+                            <label for="phoneFormOne" class="input-label">Телефон</label>
+                            <input name="phone" type="text" id="phoneFormOne" class="form-input phone-mask" required placeholder="+7 (7212) 502 612">
                         </div>
                         <div class="input-wrap">
-                            <label for="emailForm" class="input-label">Почта</label>
-                            <input data-validation="required email" type="email" name="email" id="emailForm" class="form-input" required placeholder="example@mail.ru">
+                            <label for="emailFormOne" class="input-label">Почта</label>
+                            <input data-validation="required email" type="email" name="email" id="emailFormOne" class="form-input" required placeholder="example@mail.ru">
                         </div>
-                        <button type="submit" class="catalog__submit main-btn">Отправить на расчёт</button>
+                        <button type="submit" class="main-submit main-btn">Отправить на расчёт</button>
                     </form>
-                    <a href="mailto:toosnabprom@mail.ru" class="catalog__email">Можно на почту: <span class="fat">toosnabprom@mail.ru</span></a>
+                    <a href="mailto:toosnabprom@mail.ru" class="main-email">Можно на почту: <span class="fat">toosnabprom@mail.ru</span></a>
                 </div>
-                <div class="catalog__block-right">
+                <div class="main-block-right">
                     <span class="right-title">Получить КП <br> или договориться о личной встрече</span>
                     <span class="subtitle">Оставьте заявку, перезвоним в течение 10 минут</span>
-                    <button class="catalog__btn main-btn openModal" data-modal="modal__callback">Свяжитесь со мной</button>
-                    <a href="tel:+77758885529" class="catalog__block-phone">+7 775 888 55 29</a>
-                    <span class="catalog__block-text">Или позвоните. Мы на связи <br> с 9:00 до 18:00</span>
+                    <button class="main-btn main-btn openModal" data-modal="modal__callback">Свяжитесь со мной</button>
+                    <a href="tel:+77758885529" class="main-block-phone">+7 775 888 55 29</a>
+                    <span class="main-block-text">Или позвоните. Мы на связи <br> с 9:00 до 18:00</span>
                 </div>
             </div>
         </div>
@@ -480,9 +480,79 @@ description: "Какое то описание для страницы, для �
                     <div class="table-text">Часть компаний и объектов, с которыми мы работали</div>
                 </div>
             </div>
+            <div class="cases__doc">
+                <div class="doc-list">
+                    <div class="doc-wrapper">
+                        <div class="doc-item"><img src="img/case-desc1.png" alt="img" class="item-img"></div>
+                        <div class="doc-item"><img src="img/case-desc2.png" alt="img" class="item-img"></div>
+                    </div>
+                </div>
+                <span class="doc-link">За 2024 год мы отчислили в гос. бюджет — 1, 625 млрд. ₸ в виде налоговых отчислений</span>
+            </div>
+            <div class="main-form">
+                <div class="main-block-left">
+                    <h2 class="title">Оставьте заявку на расчёт</h2>
+                    <p class="subtitle">Рассчитаем стоимость в течение рабочего дня</p>
+                    <form action="./php/send.php" class="main-body"  method="post" accept-charset="utf-8" enctype="multipart/form-data">
+                        <div class="input-wrap">
+                            <label for="commentFormTwo" class="input-label">Описание заказа или комментарий</label>
+                            <textarea name="comment" type="text" id="commentFormTwo" class="form-comment"></textarea>
+                        </div>
+                        <label for="formUploadTwo" class="form-upload">
+                            <span class="upload-icon"></span>
+                            <span class="upload-name fileName" id="fileNameTwo">Прикрепить файл</span>
+                            <input hidden id="formUploadTwo" class="inputFile" type="file" name="myfile" size="40"
+                                   accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx" aria-invalid="false">
+                        </label>
+                        <div class="input-wrap">
+                            <label for="nameFormTwo" class="input-label">Имя</label>
+                            <input name="name" type="text" id="nameFormTwo" class="form-input" required placeholder="Иван">
+                        </div>
+                        <div class="input-wrap">
+                            <label for="phoneFormTwo" class="input-label">Телефон</label>
+                            <input name="phone" type="text" id="phoneFormTwo" class="form-input phone-mask" required placeholder="+7 (7212) 502 612">
+                        </div>
+                        <div class="input-wrap">
+                            <label for="emailFormTwo" class="input-label">Почта</label>
+                            <input data-validation="required email" type="email" name="email" id="emailFormTwo" class="form-input" required placeholder="example@mail.ru">
+                        </div>
+                        <button type="submit" class="main-submit main-btn">Отправить на расчёт</button>
+                    </form>
+                    <a href="mailto:toosnabprom@mail.ru" class="main-email">Можно на почту: <span class="fat">toosnabprom@mail.ru</span></a>
+                </div>
+                <div class="main-block-right">
+                    <span class="right-title">Получить КП <br> или договориться о личной встрече</span>
+                    <span class="subtitle">Оставьте заявку, перезвоним в течение 10 минут</span>
+                    <button class="main-btn openModal" data-modal="modal__callback">Свяжитесь со мной</button>
+                    <a href="tel:+77758885529" class="main-block-phone">+7 775 888 55 29</a>
+                    <span class="main-block-text">Или позвоните. Мы на связи <br> с 9:00 до 18:00</span>
+                </div>
+            </div>
         </div>
     </section>
-
+    <section class="question" id="question">
+        <div class="container">
+            <h2 class="title">Наши технических специалисты ответили на <span class="accent">ключевые вопросы</span> при заказе ППУ труб</h2>
+            <ul class="question__list">
+                <li class="list-item active">
+                    <span class="item-title">Чем наши трубы в ППУ изоляции отличаются от продукции других производителей? <span class="item-icon"></span></span>
+                    <span class="item-desc">В отличие от многих производителей, мы реализуем полный производственный цикл на новом автоматизированном оборудовании Guangdong Liansu Machinery Manufacturing Co.,LTD (LIANSU).   Самостоятельно производим полиэтиленовую оболочку из первичного сырья, не используя вторичные материалы. Автоматизация всех процессов, включая сварку, обеспечивает стабильное качество и точность геометрических размеров. Стыковую сварку сегментов полиэтиленовой оболочки для фитингов, делаем на специальном гидравлическом оборудовании. Для обеспечения высокого качества адгезии пенополиуретана мы проводим дробиструйную обработку стальных труб, используем центрирующие опоры и выдерживаем оптимальный угол заливки, для выхода воздуха.  Каждое изделие проходит трехступенчатый контроль качества и опрессовку, для выявления возможных дефектов.</span>
+                </li>
+                <li class="list-item">
+                    <span class="item-title">Какие сроки производства и условия оплаты вы предлагаете?<span class="item-icon"></span></span>
+                    <span class="item-desc">В отличие от многих производителей, мы реализуем полный производственный цикл на новом автоматизированном оборудовании Guangdong Liansu Machinery Manufacturing Co.,LTD (LIANSU).   Самостоятельно производим полиэтиленовую оболочку из первичного сырья, не используя вторичные материалы. Автоматизация всех процессов, включая сварку, обеспечивает стабильное качество и точность геометрических размеров. Стыковую сварку сегментов полиэтиленовой оболочки для фитингов, делаем на специальном гидравлическом оборудовании. Для обеспечения высокого качества адгезии пенополиуретана мы проводим дробиструйную обработку стальных труб, используем центрирующие опоры и выдерживаем оптимальный угол заливки, для выхода воздуха.  Каждое изделие проходит трехступенчатый контроль качества и опрессовку, для выявления возможных дефектов.</span>
+                </li>
+                <li class="list-item">
+                    <span class="item-title">Что включает в себя система контроля качества на производстве?<span class="item-icon"></span></span>
+                    <span class="item-desc">В отличие от многих производителей, мы реализуем полный производственный цикл на новом автоматизированном оборудовании Guangdong Liansu Machinery Manufacturing Co.,LTD (LIANSU).   Самостоятельно производим полиэтиленовую оболочку из первичного сырья, не используя вторичные материалы. Автоматизация всех процессов, включая сварку, обеспечивает стабильное качество и точность геометрических размеров. Стыковую сварку сегментов полиэтиленовой оболочки для фитингов, делаем на специальном гидравлическом оборудовании. Для обеспечения высокого качества адгезии пенополиуретана мы проводим дробиструйную обработку стальных труб, используем центрирующие опоры и выдерживаем оптимальный угол заливки, для выхода воздуха.  Каждое изделие проходит трехступенчатый контроль качества и опрессовку, для выявления возможных дефектов.</span>
+                </li>
+                <li class="list-item">
+                    <span class="item-title">Какие виды продукции вы производите и можно ли заказать нестандартные решения?<span class="item-icon"></span></span>
+                    <span class="item-desc">В отличие от многих производителей, мы реализуем полный производственный цикл на новом автоматизированном оборудовании Guangdong Liansu Machinery Manufacturing Co.,LTD (LIANSU).   Самостоятельно производим полиэтиленовую оболочку из первичного сырья, не используя вторичные материалы. Автоматизация всех процессов, включая сварку, обеспечивает стабильное качество и точность геометрических размеров. Стыковую сварку сегментов полиэтиленовой оболочки для фитингов, делаем на специальном гидравлическом оборудовании. Для обеспечения высокого качества адгезии пенополиуретана мы проводим дробиструйную обработку стальных труб, используем центрирующие опоры и выдерживаем оптимальный угол заливки, для выхода воздуха.  Каждое изделие проходит трехступенчатый контроль качества и опрессовку, для выявления возможных дефектов.</span>
+                </li>
+            </ul>
+        </div>
+    </section>
 </main>
 
 

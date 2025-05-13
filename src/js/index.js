@@ -2,11 +2,22 @@ const MENU_BTN = document.querySelector('.menu-btn')
 const MENU = document.querySelector('.header__nav')
 const CERT_GALLERY = document.querySelector('.catalog__cert-btn')
 const ABOUT_CERT = document.querySelector('.cert-link')
+const TAB_ITEM = document.querySelectorAll('.list-item')
 
 //Раскрытие меню
 MENU_BTN.addEventListener('click', () => {
     MENU_BTN.classList.toggle('active')
     MENU.classList.toggle('active')
+})
+
+TAB_ITEM.forEach((item) => {
+    item.addEventListener('click', () => {
+        if (item.classList.contains('active')) {
+            item.classList.remove('active')
+        } else {
+            item.classList.add('active')
+        }
+    })
 })
 
 

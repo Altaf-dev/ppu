@@ -797,377 +797,6 @@
       padding: 20px 45px;
     }
   }
-
-  &__form {
-    display: flex;
-    width: 100%;
-    margin-top: 140px;
-    border-radius: 20px;
-    background: $product-card;
-    overflow: hidden;
-    @media screen and (max-width: 1199px) {
-      flex-direction: column;
-      margin-top: 125px;
-    }
-    @media screen and (max-width: 767px) {
-      max-width: 425px;
-      margin: 60px auto 0;
-      border-radius: 10px;
-    }
-  }
-
-  &__block-left {
-    position: relative;
-    max-width: 800px;
-    width: 100%;
-    padding: 50px 75px 50px 40px;
-    @media screen and (max-width: 1199px) {
-      padding: 45px 35px 40px 35px;
-      max-width: 100%;
-    }
-    @media screen and (max-width: 767px) {
-      padding: 25px 15px 30px;
-    }
-
-    .title {
-      max-width: 510px;
-      @media screen and (max-width: 1199px) {
-        max-width: 100%;
-      }
-      @media screen and (max-width: 767px) {
-        max-width: 265px;
-      }
-    }
-
-    .subtitle {
-      margin-top: 25px;
-      margin-bottom: 45px;
-      font-size: 2rem;
-      font-weight: 400;
-      line-height: 155%;
-      opacity: .7;
-      @media screen and (max-width: 767px) {
-        max-width: 245px;
-        margin-top: 10px;
-        margin-bottom: 35px;
-        font-size: 1.5rem;
-      }
-    }
-  }
-
-  &__body {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .input-wrap {
-    position: relative;
-    display: flex;
-    padding-left: 160px;
-    margin-bottom: 14px;
-    @media screen and (max-width: 767px) {
-      padding-left: 105px;
-    }
-  }
-
-  .input-label {
-    position: absolute;
-    left: 0;
-    max-width: 135px;
-    color: $white-text;
-    font-size: 1.8rem;
-    font-weight: 600;
-    line-height: 140%;
-    @media screen and (max-width: 767px) {
-      max-width: 100px;
-      font-size: 1.5rem;
-      font-weight: 500;
-    }
-  }
-
-  .form-comment {
-    max-width: 520px;
-    width: 100%;
-    height: 130px;
-    padding: 14px 13px;
-    font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 140%;
-    resize: none;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.07);
-    color: $white-text;
-  }
-
-  .form-upload {
-    display: flex;
-    align-items: center;
-    margin: 20px 0 35px 160px;
-    cursor: pointer;
-    @media screen and (max-width: 767px) {
-      margin: 15px 0 25px 120px;
-    }
-    @media screen and (max-width: 359px) {
-      margin: 15px 0 25px 95px;
-    }
-
-    .upload-icon {
-      display: block;
-      width: 20px;
-      height: 20px;
-      margin-right: 10px;
-      background-image: url("../img/upload-icon2.svg");
-      background-size: contain;
-      background-repeat: no-repeat;
-      opacity: .7;
-      @media screen and (max-width: 767px) {
-        width: 13px;
-        height: 13px;
-      }
-    }
-
-    .upload-name {
-      position: relative;
-      font-size: 1.8rem;
-      font-weight: 400;
-      line-height: 140%;
-      opacity: .7;
-      @media screen and (max-width: 767px) {
-        font-size: 1.5rem;
-      }
-      @media screen and (max-width: 375px) {
-        font-size: 1.2rem;
-      }
-      &:after {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        border: 1px dashed rgba(255, 255, 255, 0.5);
-      }
-    }
-  }
-
-  .form-input {
-    max-width: 270px;
-    width: 100%;
-    padding: 14px 10px;
-    font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 140%;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.07);
-    color: $white-text;
-    &::placeholder {
-      font-size: 1.8rem;
-      font-weight: 400;
-      line-height: 140%;
-      color: $white-text;
-      opacity: .7;
-    }
-    @media screen and (max-width: 1199px) {
-      max-width: 287px;
-    }
-    @media screen and (max-width: 767px) {
-      max-width: 520px;
-    }
-  }
-
-  &__submit {
-    max-width: 270px;
-    padding: 20px 42px;
-    margin-left: 160px;
-    margin-bottom: 40px;
-    font-size: 1.8rem;
-    @media screen and (max-width: 767px) {
-      margin: 30px auto 0;
-    }
-    @media screen and (max-width: 425px) {
-      width: 100%;
-
-    }
-  }
-
-  &__email {
-    font-size: 2rem;
-    font-weight: 400;
-    line-height: 155%;
-    color: $white-text;
-    .fat {
-      font-weight: 700;
-      @media screen and (max-width: 1199px) {
-        display: block;
-      }
-
-    }
-    @media screen and (max-width: 1199px) {
-      position: absolute;
-      right: 65px;
-      bottom: 125px;
-    }
-    @media screen and (max-width: 959px) {
-      display: block;
-      position: static;
-      text-align: center;
-    }
-    @media screen and (max-width: 767px) {
-      margin-top: 25px;
-    }
-  }
-
-  &__block-right {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    max-width: 440px;
-    width: 100%;
-    padding: 40px 30px;
-    background-color: rgba(255, 255, 255, .1);
-    @media screen and (max-width: 1199px) {
-      max-width: 100%;
-      padding: 40px 35px;
-    }
-    @media screen and (max-width: 767px) {
-      padding: 30px 15px 50px;
-    }
-
-    &:before {
-      content: '';
-      position: absolute;
-      right: -100px;
-      bottom: 0;
-      background-image: url("../img/foto2.png");
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: 490px;
-      height: 420px;
-      z-index: 5;
-      @media screen and (max-width: 1199px) {
-        left: auto;
-        right: 0;
-        width: 427px;
-        height: 372px;
-      }
-      @media screen and (max-width: 959px) {
-        right: -90px;
-      }
-      @media screen and (max-width: 767px) {
-        width: 255px;
-        height: 250px;
-        right: -50px;
-        bottom: -65px;
-      }
-    }
-
-    &:after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: -230px;
-      background-image: url("../img/decor-form.png");
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: 665px;
-      height: 665px;
-      z-index: 2;
-      @media screen and (max-width: 1199px) {
-        left: auto;
-        right: -200px;
-        bottom: -280px;
-      }
-      @media screen and (max-width: 767px) {
-        width: 405px;
-        height: 405px;
-        right: -195px;
-        bottom: -200px;
-      }
-    }
-
-    .right-title {
-      position: relative;
-      max-width: 320px;
-      font-size: 3.5rem;
-      font-weight: 700;
-      line-height: 120%;
-      z-index: 10;
-      @media screen and (max-width: 1199px) {
-        max-width: 550px;
-        br {
-          display: none;
-        }
-      }
-      @media screen and (max-width: 767px) {
-        max-width: 325px;
-        br {
-          display: block;
-        }
-      }
-    }
-
-    .subtitle {
-      position: relative;
-      max-width: 290px;
-      margin-top: 15px;
-      margin-bottom: 30px;
-      font-size: 1.8rem;
-      font-weight: 400;
-      line-height: 150%;
-      z-index: 10;
-      opacity: .7;
-      @media screen and (max-width: 1199px) {
-        max-width: 100%;
-        margin-bottom: 25px;
-      }
-      @media screen and (max-width: 767px) {
-        max-width: 225px;
-        font-size: 1.5rem;
-      }
-    }
-  }
-
-  &__btn {
-    max-width: 250px;
-    padding: 17px 40px;
-  }
-
-  &__block-phone {
-    position: relative;
-    margin-top: 35px;
-    margin-bottom: 5px;
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 120%;
-    letter-spacing: -0.6px;
-    color: $white-text;
-    z-index: 10;
-    @media screen and (max-width: 1199px) {
-      margin-top: 40px;
-      margin-bottom: 10px;
-    }
-    @media screen and (max-width: 767px) {
-      font-size: 2rem;
-      margin-top: 30px;
-      margin-bottom: 10px;
-    }
-  }
-
-  &__block-text {
-    max-width: 135px;
-    font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 140%;
-    opacity: .7;
-    @media screen and (max-width: 1199px) {
-      max-width: 255px;
-    }
-    @media screen and (max-width: 767px) {
-      max-width: 130px;
-      font-size: 1.5rem;
-    }
-  }
 }
 
 .about {
@@ -2345,6 +1974,207 @@
         width: 9px;
         height: 9px;
       }
+    }
+  }
+
+  &__doc {
+    margin-top: 74px;
+    @media screen and (max-width: 1199px) {
+      margin-top: 52px;
+    }
+
+    @media screen and (max-width: 767px) {
+      margin-top: 32px;
+    }
+  }
+
+  .doc-list {
+    @media screen and (max-width: 1199px) {
+      overflow-y: auto;
+    }
+  }
+
+  .doc-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 475px;
+    @media screen and (max-width: 1199px) {
+      width: 1200px;
+      padding: 10px 0;
+    }
+    @media screen and (max-width: 767px) {
+      width: 560px;
+      height: 235px;
+      margin: 0 auto;
+    }
+  }
+
+  .doc-item {
+    width: 49.5%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .doc-link {
+    position: relative;
+    display: block;
+    padding-left: 34px;
+    margin-top: 20px;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 130%;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 12px;
+      left: 0;
+      background-image: url("../img/star.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 18px;
+      height: 18px;
+    }
+
+    @media screen and (max-width: 1199px) {
+      font-size: 2.4rem;
+      &:before {
+        top: 4px;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      max-width: 320px;
+      padding-left: 20px;
+      font-size: 1.6rem;
+      &:before {
+        top: 4px;
+        width: 9px;
+        height: 9px;
+      }
+    }
+  }
+}
+
+.question {
+
+  .title {
+    max-width: 884px;
+    margin-bottom: 40px;
+    @media screen and (max-width: 1199px) {
+      max-width: 790px;
+    }
+    @media screen and (max-width: 767px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  .list-item {
+    width: 100%;
+    max-height: 64px;
+    padding: 22px 16px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: .3s;
+    cursor: pointer;
+    &.active {
+      max-height: 1000px;
+      .item-icon {
+        &:before,
+        &:after {
+          background-color: $accent-text-hover;
+        }
+
+        &:after {
+          opacity: 0;
+        }
+      }
+      @media screen and (max-width: 960px) {
+        .item-desc {
+          max-height: 1000px;
+          margin-top: 22px;
+        }
+      }
+    }
+    @media screen and (max-width: 960px) {
+      max-height: none;
+    }
+  }
+
+  .item-title,
+  .item-desc {
+    display: block;
+
+  }
+
+  .item-title {
+    position: relative;
+    padding-right: 52px;
+    margin-bottom: 22px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 20px;
+    transition: .3s;
+    @media screen and (max-width: 960px) {
+      margin-bottom: 0;
+    }
+  }
+
+  .item-icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: $accent-text;
+      transition: .3s;
+    }
+
+    &:before {
+      width: 12px;
+      height: 2px;
+      border-radius: 2px;
+    }
+
+    &:after {
+      height: 12px;
+      width: 2px;
+      border-radius: 2px;
+    }
+  }
+
+  .item-desc {
+    max-width: 926px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 20px;
+    opacity: .8;
+    transition: .3s;
+    @media screen and (max-width: 960px) {
+      max-height: 0;
+      overflow: hidden;
     }
   }
 }
