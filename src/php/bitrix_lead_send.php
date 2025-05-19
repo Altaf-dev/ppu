@@ -17,6 +17,7 @@ class BitrixLead
     var $email;
     var $phone;
     var $comment;
+    var $contact;
     var $utmSource;
     var $utmMeduim;
     var $utmCompaign;
@@ -81,19 +82,18 @@ class BitrixLeadSender
                 "STATUS_ID" => "NEW",
                 "OPENED" => "Y",
                 "ASSIGNED_BY_ID" => 1,
-                "UF_CRM_1607323239" => $lead->yclid,
-                "UF_CRM_1607323307" => $lead->gclid,
-                "UF_CRM_1607327450" => $lead->pm_position,
-                "UF_CRM_1607327462" => $lead->keyword,
-                "UF_CRM_1607323275" => $lead->clientid,
-                "UF_CRM_1607323325" => $lead->googlecid,
-                "UF_CRM_1707925044048" => ['fileData' => [$name, $base64]],
+                "COMMENTS" => $lead->comment,
+                "UF_CRM_1570446141358" => ['fileData' => [$name, $base64]],
+                "STATUS_DESCRIPTION" => $lead->contact,
+                "UF_CRM_1570089566316" => $lead->yclid,
+                "UF_CRM_1570089539536" => $lead->gclid,
+                "UF_CRM_1570089591274" => $lead->position,
+                "UF_CRM_1570089783365" => $lead->keyword,
                 "UTM_SOURCE" => $lead->utmSource,
                 "UTM_MEDIUM" => $lead->utmMeduim,
                 "UTM_CAMPAIGN" => $lead->utmContent,
                 "UTM_CONTENT" => $lead->utmSource,
                 "UTM_TERM" => $lead->utmTerm,
-                "SOURCE_ID" => $lead->sourceID,
                 "PHONE" => array(array("VALUE" => $lead->phone, "VALUE_TYPE" => "WORK")),
                 "EMAIL" => array(array("VALUE" => $lead->email, "VALUE_TYPE" => "WORK")),
             ),
@@ -125,6 +125,5 @@ class BitrixLeadSender
             return true;
         }
     }
-
 }
 ?>

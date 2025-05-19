@@ -1,7 +1,115 @@
 <footer class="footer">
     <div class="container">
-
+        <div class="footer__wrapper">
+            <a href="#header" class="logo">
+                <img src="img/logo.svg" alt="logo" class="logo-img">
+                <p class="logo-text">Производство <br>ППУ труб <br>вКазахстане</p>
+            </a>
+            <a href="uploads/Computer_Science.pdf" class="footer__contact" download target="_blank">Реквизиты</a>
+            <a href="https://diple.kz" class="diple">Сделано в DIPLE</a>
+        </div>
+        <a href="#header" class="top-scroll"></a>
     </div>
+    <div class="quick-menu">
+        <button class="quick-menu__link doc openModal" data-modal="modal__calculation"></button>
+        <a href="#" target="_blank" class="quick-menu__link email"></a>
+        <a href="#" target="_blank" class="quick-menu__link phone"></a>
+        <a href="#" target="_blank" class="quick-menu__link whats"></a>
+    </div>
+
+    <div class="modal-bg closeModal"></div>
+
+    <div class="modal__discount modal">
+        <span class="close-btn closeModal"></span>
+        <h3 class="title">Расчёт стоимости оптового заказа с учётом скидки</h3>
+        <form action="./php/send.php" class="form-body" id="form-discount" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+            <div class="input-wrap">
+                <label class="input-label" for="discountComment">Описание заказа или комментарий</label>
+                <textarea name="comment" id="discountComment" type="text" class="form-comment" required></textarea>
+            </div>
+            <label for="uploadDiscount" class="input-upload">
+                <span class="upload-icon"></span>
+                <input class="upload-btn" hidden id="uploadDiscount" type="file" name="myfile"
+                       size="40"
+                       accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx" aria-invalid="false">
+                <span class="upload-desc" id="file-name-discount">Прикрепить файл</span>
+            </label>
+            <div class="input-wrap">
+                <label class="input-label" for="discountName">Имя</label>
+                <input name="name" id="discountName" type="text" class="form-input" required placeholder="Иван">
+            </div>
+            <div class="input-wrap">
+                <label class="input-label" for="discountPhone">Телефон</label>
+                <input name="phone" id="discountPhone" type="text" class="form-input phone-mask" required placeholder="+7 (7212) 502 612">
+            </div>
+            <button type="submit" class="discount-btn main-btn submit">Отправить на расчёт</button>
+        </form>
+        <div class="form-decor">
+            <div class="img-wrapper">
+                <img src="img/foto1.png" alt="img" class="decor-img">
+            </div>
+            <p class="decor-text">
+                <span class="strong">Мы сейчас на связи.</span>
+                <br>Перезвоним в течение 10 мин.
+                <br>для уточнения деталей
+            </p>
+        </div>
+    </div>
+
+    <div class="modal__calculation modal">
+        <span class="close-btn closeModal"></span>
+        <h3 class="title">Оставьте заявку на расчёт</h3>
+        <p class="subtitle">Рассчитаем стоимость в течение рабочего дня</p>
+        <form action="./php/send.php" class="form-body" id="form-calculation" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+            <div class="input-wrap">
+                <label class="input-label" for="calculationComment">Описание заказа или комментарий</label>
+                <textarea name="comment" id="calculationComment" type="text" class="form-comment" required></textarea>
+            </div>
+            <label for="modalUpload" class="input-upload">
+                <span class="upload-icon"></span>
+                <input class="upload-btn" hidden id="modalUpload" type="file" name="myfile"
+                       size="40"
+                       accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx" aria-invalid="false">
+                <span class="upload-desc" id="file-name-modal">Прикрепить файл</span>
+            </label>
+            <div class="input-wrap">
+                <label class="input-label" for="calculationName">Имя</label>
+                <input name="name" id="calculationName" type="text" class="form-input" required placeholder="Иван">
+            </div>
+            <div class="input-wrap">
+                <label class="input-label" for="calculationPhone">Телефон</label>
+                <input name="phone" id="calculationPhone" type="text" class="form-input phone-mask" required placeholder="+7 (7212) 502 612">
+            </div>
+            <button type="submit" class="calculation-btn main-btn submit">Отправить на расчёт</button>
+        </form>
+        <a href="#" class="modal-link">Можно на почту:<span class="strong">toosnabprom@mail.ru</span></a>
+    </div>
+
+    <div class="modal__question modal">
+        <span class="close-btn closeModal"></span>
+        <div class="form-body">
+            <h3 class="title">Перезвоним и ответим на вопросы</h3>
+            <p class="subtitle">Оставьте контакты для звонка</p>
+            <form action="./php/send.php" class="form-body" id="form-question" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+                <input name="name" type="text" class="form-input" required placeholder="Ваше Имя">
+                <input name="phone" type="text" class="form-input phone-mask" required placeholder="Номер Телефона">
+                <button type="submit" class="primary main-btn submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal-thanks modal">
+        <span class="close-btn closeModal"></span>
+        <h3 class="title">Спасибо за заявку</h3>
+        <span class="subtitle">Менеджер свяжется с вами в ближайшее время</span>
+    </div>
+
+    <div class="modal-error modal">
+        <span class="close-btn closeModal"></span>
+        <h3 class="title">Возникла ошибка!</h3>
+        <span class="subtitle">Вовремя отправки произошла ошибка, повторите снова</span>
+    </div>
+
 </footer>
 <script src="uploads/jquery3.4.1.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
