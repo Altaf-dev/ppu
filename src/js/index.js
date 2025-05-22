@@ -238,12 +238,12 @@ function sliderInit() {
     const cases = new Swiper('.slider-wrapper', {
         speed: 400,
         spaceBetween: 20,
-        loop: false,
+        loop: true,
         slidesPerView: "auto",
         autoplay: false,
         navigation: {
-            nextEl: '.cases__button-next',
-            prevEl: '.cases__button-prev',
+            nextEl: '.cases__button-prev',
+            prevEl: '.cases__button-next',
         },
     });
 }
