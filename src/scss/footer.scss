@@ -5,7 +5,7 @@
   padding-top: 32px;
   padding-bottom: 50px;
   @media screen and (max-width: 767px) {
-    padding-bottom: 70px;
+    padding-bottom: 90px;
   }
 
   &__wrapper {
@@ -15,6 +15,7 @@
       display: flex;
       flex-direction: column;
       text-align: center;
+      align-items: center;
     }
 
     .logo {
@@ -25,14 +26,24 @@
         text-align: center;
       }
 
-      .logo-text {
+      .logo-img {
         @media screen and (max-width: 767px) {
+          margin: 0;
+        }
+      }
+
+      .logo-text {
+        max-width: 87px;
+        @media screen and (max-width: 767px) {
+          max-width: 161px;
           display: block;
           margin-left: 0;
           margin-top: 7px;
+          font-size: 1.3rem;
         }
       }
     }
+
   }
 
   &__contact {
@@ -41,17 +52,16 @@
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 140%;
-    //text-decoration: underline;
-    //text-decoration-color: rgba(255, 255, 255, .2);
     &:after {
       content: '';
       position: absolute;
       left: 0;
       bottom: -2px;
       width: 100%;
-      border-bottom: 1px dashed rgba(255, 255, 255, .4);
+      border-bottom: 1px solid rgba(255, 255, 255, .4);
     }
     @media screen and (max-width: 767px) {
+      width: fit-content;
       font-size: 1.5rem;
     }
   }
@@ -70,11 +80,12 @@
       left: 0;
       bottom: -2px;
       width: 100%;
-      border-bottom: 1px dashed rgba(255, 255, 255, .4);
+      border-bottom: 1px solid rgba(255, 255, 255, .4);
     }
     @media screen and (max-width: 767px) {
-      position: static;
-      margin-top: 50px;
+      position: relative;
+      width: fit-content;
+      margin-top: 20px;
       font-size: 1.5rem;
     }
   }
@@ -362,9 +373,6 @@
     }
 
     .modal-link {
-      //position: absolute;
-      //right: 85px;
-      //bottom: 25px;
       display: flex;
       align-items: center;
       margin-top: 38px;
@@ -382,9 +390,6 @@
       }
 
       @media screen and (max-width: 1199px) {
-        //position: static;
-        //text-align: center;
-        //margin: 25px auto 0;
         font-size: 1.5rem;
       }
     }
@@ -404,7 +409,59 @@
     }
   }
 
-  &__question,
+  &__question {
+    max-width: 460px;
+    padding: 55px 70px 32px;
+    overflow: hidden;
+    @media screen and (max-width: 767px) {
+      padding: 65px 20px 40px;
+    }
+
+    .title {
+      max-width: 320px;
+      font-size: 2.8rem;
+      text-align: center;
+      color: $main-body;
+      @media screen and (max-width: 767px) {
+        font-size: 2.4rem;
+      }
+    }
+
+    .subtitle {
+      margin-top: 4px;
+      margin-bottom: 24px;
+      font-size: 1.8rem;
+      color: $main-body;
+    }
+
+    .form-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .form-input {
+      width: 100%;
+      max-width: 100%;
+      margin-left: 0;
+      margin-top: 14px;
+      margin-bottom: 0;
+      &:first-child {
+        margin-top: 0;
+      }
+      @media screen and (max-width: 767px) {
+        max-width: 100%;
+      }
+    }
+
+    .submit {
+      width: 100%;
+      height: 63px;
+      margin-left: 0;
+      margin-top: 16px;
+    }
+  }
+
   &__callback {
     max-width: 600px;
     padding: 15px 30px 48px;

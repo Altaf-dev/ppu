@@ -107,10 +107,12 @@
     margin: 20px 0 35px 160px;
     cursor: pointer;
     @media screen and (max-width: 767px) {
-      margin: 15px 0 25px 120px;
+      margin-top: 0;
+      margin-left: 120px;
+      margin-bottom: 14px;
     }
     @media screen and (max-width: 359px) {
-      margin: 15px 0 25px 95px;
+      margin-left: 95px;
     }
 
     .upload-icon {
@@ -134,9 +136,6 @@
       font-weight: 400;
       line-height: 140%;
       opacity: .7;
-      @media screen and (max-width: 767px) {
-        font-size: 1.5rem;
-      }
       @media screen and (max-width: 375px) {
         font-size: 1.2rem;
       }
@@ -212,14 +211,12 @@
     @media screen and (max-width: 1199px) {
       position: absolute;
       right: 65px;
-      bottom: 125px;
+      bottom: 83px;
     }
-    @media screen and (max-width: 959px) {
+    @media screen and (max-width: 820px) {
       display: block;
       position: static;
       text-align: center;
-    }
-    @media screen and (max-width: 767px) {
       margin-top: 25px;
     }
   }
